@@ -254,6 +254,24 @@ class Address extends BaseType
     /**
      * @return string
      */
+    public function getStreetHouseNrExt()
+    {
+        return $this->StreetHouseNrExt;
+    }
+
+    /**
+     * @param string $StreetHouseNrExt
+     * @return Address
+     */
+    public function setStreetHouseNrExt($StreetHouseNrExt)
+    {
+        $this->StreetHouseNrExt = $StreetHouseNrExt;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
     public function getHouseNr()
     {
         return $this->HouseNr;
